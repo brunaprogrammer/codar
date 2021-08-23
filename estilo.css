@@ -7,7 +7,6 @@
 
 body{
     font-family: 'Roboto', sans-serif;
-
 }
 
 .menu{
@@ -22,7 +21,6 @@ body{
 h1{
     color: var(--vermelho);
     font-style: italic;
-  
 }
 
 span{
@@ -32,8 +30,8 @@ span{
 nav{
     display:flex;
     flex-wrap: wrap;  
-    
     font-size: 1.25rem;
+    margin-right: 44px;
 }
 
 .navegador{
@@ -66,15 +64,11 @@ a, a:visited{
     display: flex;
     flex-wrap: wrap;
     padding: 70px 0;
-
-}
-
-.figura{
-    padding-left:100px;
 }
 
 .fig{
-    width: 22rem;
+    width: 25rem;
+    padding-left: 100px;
 }
 
 .geral{
@@ -98,19 +92,306 @@ p span{
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
+    height: 3.5rem;
+    width: 19rem;
 }
 
 .servicos{
     max-width: 960px;
-    margin: 0 auto;
+    margin: 150px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reverso{
     display: flex;
     flex-wrap: wrap;
 }
 
 .lista-servicos{
-
+    padding-left: 100px;
+    line-height: 50px;
+    font-size: 1.25rem;
+    padding-top: 100px;
 }
 
 .lista-servicos ul{
     list-style-type: none;
+}
+
+ul li i{
+    color: var(--vermelho);
+    padding-right: 20px;
+}
+
+.fig-dois{
+    width: 600px;
+    padding-left: 100px;
+}
+
+.disposicao{
+    padding-left: 100px;
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.disposicao input{
+    width: 215px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    border: none;
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.disposicao button{
+    font-size: .9rem;
+    width: 215px;
+    background-color: var(--vermelho);
+    color: white;
+    border: none;
+    padding: 9px 41px;
+    border-radius: 8px;
+    font-weight: bold;
+    height: 45px;
+    cursor: pointer;
+}
+
+.depoimentos{
+    display: flex;
+    max-width: 960px;
+    margin: 200px auto 100px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.depoimento-um, .depoimento-dois{
+    background-color: #dcdcdc;
+    border-radius: 8px;
+    width: 415px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.pessoa-um, .pessoa-dois{
+    background-color: var(--vermelho);
+    border-radius: 50%;
+    width: 75px;
+    height: 65px;    
+}  
+
+.paragrafos{
+    margin-left: 20px;
+    width: 300px;
+    text-align: justify;
+    
+    font-weight: 500;
+    font-size: 1.25rem;
+    
+}
+
+.paragrafos :first-child{
+    
+    padding-bottom: 10px;
+    font-size: .9rem;
+}
+
+.paragrafos :last-child{
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    max-width: 960px;
+    height: 300px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    padding: 70px 30px 30px;
+}
+
+.fot1 p:first-of-type{
+    font-size: 2.25rem;
+    font-weight: 600;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+.fot2 p:first-of-type, .fot3 p:first-of-type, .fot4 p:first-of-type{
+    font-size: 1.35rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.fot3 p{
+    padding-bottom: 20px;
+}
+
+.fot3 p:last-of-type{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.fot4 i{
+    color: var(--vermelho);
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 7px;
+    margin-left: 9px;
+}
+
+@media (max-width: 1024px){
+    .menu{
+        display: inline;
+        text-align: center;
+    }
+
+    .logo{
+        margin-bottom: 20px;
+    }
+
+    nav ul li:last-of-type{
+        display: none;
+    }
+
+    .navegador, .apresentacao,  .depoimentos {
+        
+        justify-content: center;
+        text-align: center;
+    }
+
+    .apresentacao{
+        flex-direction: column;
+    }
+
+    .servicos{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        flex-direction: column;
+    }
+
+    .fig, .fig-dois{
+        padding-left: 0;
+        width: 50%;
+    }
+
+    .orcamento{
+        font-weight: 500;
+    }
+
+    .figura-dois{
+        text-align: center;
+    }
+
+    .fig-dois{
+        text-align: center;
+    }
+
+    .lista-servicos{
+        padding-top: 25px;
+        padding-left: 0;
+    }
+
+    .geral{
+        padding: 40px 0 0 0;
+    }
+
+    .reverso{
+        flex-direction: column-reverse;
+        margin-bottom: 40px;
+    }
+
+    .disposicao{
+        text-align: center;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .lista-servicos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .coluna{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .disposicao input {
+        margin-bottom: 10px;
+    }
+
+    nav {
+    display: inline; 
+    margin-right: 0;
+    }
+    
+    .depoimentos{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .depoimento-um, .depoimento-dois{
+        margin-bottom: 50px;
+    }
+
+    .depoimentos{
+        flex-direction: column;
+        margin: 0;
+        max-width: 960px;
+    }
+    
+    .depoimento-um, .depoimento-dois{
+        background-color: #dcdcdc;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 20px;
+        max-width: 90%;
+        min-height: 180px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 0;
+        padding: 20px 20px 20px 40px;
+        width: 100vw;
+    }
+
+    footer .fot1{
+        text-align: center;
+    }
+
+    footer .fot1 p:first-child{
+        padding: 5px;
+    }
+
+    footer .fot2 , .fot3, .fot4{
+        align-items: flex-start;
+    }
+
+    .fot2 p:first-of-type, .fot3 p:first-of-type, .fot4 p:first-of-type{
+        padding-bottom: 5px;
+    }
+    
+    .fot1 p:last-child, .fot2 p:last-child{
+        padding-bottom: 20px;
+    }
+
+    .fot3 p{
+        padding-bottom: 10px;
+    }
+
+    .fot4 p:first-child{
+        padding: 20px 0;
+    }
 }
