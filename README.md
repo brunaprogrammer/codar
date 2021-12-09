@@ -1,4 +1,4 @@
-Minha landing page https://app.netlify.com/sites/mystifying-babbage-b9ab1f/overview
+Minha landing page https://mystifying-babbage-b9ab1f.netlify.app/
 
 
 <br />
